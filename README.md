@@ -1,6 +1,7 @@
 # DROID ENGINE TECH
 
 ## CONCEPT
+
 **Droid Engine** is a game engine designed around the **SCENE->ENTITY->COMPONENT** model.
 
 It is written in **ES6 Javascript** and rendered in an **Electron** shell using **WebGL**.
@@ -28,12 +29,17 @@ npm run start // Runs Electron and launches the game window.
 My initial idea is to use as many existing libraries as possible instead of having to reinvent the wheel. After seeing Noel's work on Skytorn and Celeste, I know his engine is going to be amazing.
 However, this project is more of a learning tool for me and a challenging experiment to see how polished of an engine I can write using existing code that is typically meant for web development.
 
+### NOTE: _(The items in this list are only possible additions to the engine. Thanks to all of the authors and contibutors of each of these for your hard work and contributions.)_
 
-### NOTE: *(The items in this list are only possible additions to the engine. Thanks to all of the authors and contibutors of each of these for your hard work and contributions.)*
+* [Victor](http://victorjs.org/) - Javascript vector library
+* [Math.js](http://mathjs.org/) - An extensive math library for JavaScript and Node.js.
+
+These are all just ideas down here...
+
 * [Electron](http://electron.atom.io/) - Build cross platform desktop apps with JavaScript, HTML, and CSS.
 * [WebGL](https://github.com/KhronosGroup/WebGL) - HTML5 implimentation of OpenGL in the browser.
 * [glMatrix](http://glmatrix.net/) - glMatrix is designed to perform vector and matrix operations stupidly fast!
-* [Co](https://github.com/tj/co) - Generator based control flow goodness for nodejs and the browser, using promises, letting you write non-blocking code in a nice-ish way. Using this for  **Coroutines**. Here is a good article explaining Javascript coroutines: [Promise-Based Coroutines in Node.js](http://tobyho.com/2015/12/27/promise-based-coroutines-nodejs/)
+* [Co](https://github.com/tj/co) - Generator based control flow goodness for nodejs and the browser, using promises, letting you write non-blocking code in a nice-ish way. Using this for **Coroutines**. Here is a good article explaining Javascript coroutines: [Promise-Based Coroutines in Node.js](http://tobyho.com/2015/12/27/promise-based-coroutines-nodejs/)
 * [socket.io](http://socket.io/) - Socket.IO enables real-time bidirectional event-based communication.
 * [Webpack](https://webpack.js.org) - A tool to build JavaScript modules in your application.
 * [Lodash](https://lodash.com/) - A modern JavaScript utility library delivering modularity, performance & extras.
@@ -48,7 +54,6 @@ However, this project is more of a learning tool for me and a challenging experi
 * [Howler.js](https://howlerjs.com/) - howler.js makes working with audio in JavaScript easy and reliable across all platforms.
 * [markdown-js](https://github.com/evilstreak/markdown-js) - A Markdown parser for javascript.
 * [Lettering.js](http://letteringjs.com/) - A lightweight, easy to use Javascript injector for radical Web Typography.
-* [Math.js](http://mathjs.org/) - An extensive math library for JavaScript and Node.js.
 * [Messenger](http://github.hubspot.com/messenger/) - Growl-style alerts and messages for your app.
 * [Tween.js](https://github.com/tweenjs/tween.js) - Javascript tweening engine.
 * [RethinkDB](https://rethinkdb.com/) - The open-source database for the realtime web.
