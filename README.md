@@ -33,6 +33,7 @@ However, this project is more of a learning tool for me and a challenging experi
 
 * [Victor](http://victorjs.org/) - Javascript vector library
 * [Math.js](http://mathjs.org/) - An extensive math library for JavaScript and Node.js.
+* [IEnumerable](https://ienumerable.js.org) - IEnumerable is a library that allows you to create deeply immutable collections and query them with a Linq syntax.
 
 These are all just ideas down here...
 

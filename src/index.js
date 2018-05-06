@@ -1,7 +1,31 @@
-import Component from './components/Component';
 import Victor from 'victor';
 
-let comp = new Component(true, true, 1, 1);
-comp.addedToScene();
-comp.position = new Victor(150, 234);
-console.log(comp.position.rotateDeg(45));
+import Entity from './core/Entity';
+import Scene from './core/Scene';
+import Component from './core/Component';
+
+const testScene = new Scene();
+
+const testEntity = new Entity('Test Entity');
+
+const testComponent = new Component(
+  'Test Component',
+  testEntity,
+  new Victor(10, 10),
+  testScene,
+  true,
+  true
+);
+const anotherComponent = new Component(
+  'Another Component',
+  testEntity,
+  new Victor(250, 250),
+  testScene,
+  true,
+  true
+);
+
+testEntity.components.push(testComponent);
+testEntity.components.push(anotherComponent);
+
+console.log(testEntity.components.map(component => component.name));
