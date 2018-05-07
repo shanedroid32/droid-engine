@@ -11,6 +11,8 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
+    "prepack": "^0.2.34",
+    "prepack-webpack-plugin": "^1.1.0",
     "webpack": "^4.7.0",
     "webpack-cli": "^2.1.2"
   },
@@ -20,12 +22,16 @@
     ]
   },
   "scripts": {
-    "dev": "webpack -w"
+    "dev": "webpack -w",
+    "prepack": "prepack dist/engine.js --out dist/processed.js"
   },
   "dependencies": {
+    "animejs": "^2.2.0",
     "es6-enum": "^1.1.0",
     "ienumerable": "^1.1.0",
+    "immutable": "^3.8.2",
     "mathjs": "^4.2.2",
+    "three": "^0.92.0",
     "victor": "^1.1.0"
   }
 }

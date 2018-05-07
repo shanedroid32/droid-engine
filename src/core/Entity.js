@@ -1,6 +1,5 @@
 import Victor from 'victor';
-
-import Component from './Component';
+import { List } from 'immutable';
 
 class Entity {
   constructor(_name) {
@@ -14,8 +13,8 @@ class Entity {
     this.isActive = true;
     // What scene is this entity in?
     this.scene = null;
-    // What component does this entity have?
-    this.components = [];
+    // An immutable list of Components
+    this.components = List();
   }
 }
 

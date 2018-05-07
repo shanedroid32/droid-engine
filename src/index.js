@@ -1,4 +1,5 @@
 import Victor from 'victor';
+import { Set } from 'immutable';
 
 import Entity from './core/Entity';
 import Scene from './core/Scene';
@@ -7,6 +8,8 @@ import Component from './core/Component';
 const testScene = new Scene();
 
 const testEntity = new Entity('Test Entity');
+
+testScene.entityList = Set([testEntity]);
 
 const testComponent = new Component(
   'Test Component',
@@ -25,7 +28,7 @@ const anotherComponent = new Component(
   true
 );
 
-testEntity.components.push(testComponent);
-testEntity.components.push(anotherComponent);
+testEntity.components = Set([testComponent, anotherComponent]);
 
-console.log(testEntity.components.map(component => component.name));
+console.log(testScene);
+console.log(testScene.entityList.first());

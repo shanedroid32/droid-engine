@@ -30,6 +30,20 @@ My initial idea is to use as many existing libraries as possible instead of havi
 
 * [Webpack](https://webpack.js.org) - A tool to build JavaScript modules in your application.
 * [Babel](https://babeljs.io/) - The compiler for writing next generation JavaScript.
+* [Yarn](https://yarnpkg.com/en/) - Fast, reliable, and secure dependency management.
+* [Prepack](https://prepack.io/) - A tool for making JavaScript code run faster.
+
+### Rendering
+
+* [Three.js](https://threejs.org/) - lightweight 3d library
+
+### Data
+
+* [pouchdb](https://pouchdb.com/) - PouchDB is an open-source JavaScript database inspired by Apache CouchDB that is designed to run well within the browser.
+
+### Audio
+
+* [Howler.js](https://howlerjs.com/) - howler.js makes working with audio in JavaScript easy and reliable across all platforms.
 
 ### Utility Libraries
 
@@ -37,6 +51,8 @@ My initial idea is to use as many existing libraries as possible instead of havi
 * [Math.js](http://mathjs.org/) - An extensive math library for JavaScript and Node.js.
 * [IEnumerable](https://ienumerable.js.org) - IEnumerable is a library that allows you to create deeply immutable collections and query them with a Linq syntax.
 * [Lodash](https://lodash.com/) - A modern JavaScript utility library delivering modularity, performance & extras.
+* [Immutable](http://facebook.github.io/immutable-js/) - Immutable.js provides many Persistent Immutable data structures including: List, Stack, Map, OrderedMap, Set, OrderedSet and Record.
+* [Anime](http://animejs.com/) - A lightweight JavaScript animation library. It works with any CSS Properties, individual CSS transforms, SVG or any DOM attributes, and JavaScript Objects.
 
 ### Cross-platform desktop wrapper
 
@@ -54,7 +70,6 @@ Some other possible libraries I might use in the future...
 * [nodemon](https://nodemon.io) - Monitor for any changes in your node.js application and automatically restart the server.
 * [Particles.js](http://vincentgarreau.com/particles.js/) - A lightweight JavaScript library for creating particles.
 * [Mousetrap](https://craig.is/killing/mice) - Simple library for handling keyboard shortcuts in Javascript. You never know...
-* [Howler.js](https://howlerjs.com/) - howler.js makes working with audio in JavaScript easy and reliable across all platforms.
 * [markdown-js](https://github.com/evilstreak/markdown-js) - A Markdown parser for javascript.
 * [Lettering.js](http://letteringjs.com/) - A lightweight, easy to use Javascript injector for radical Web Typography.
 * [Messenger](http://github.hubspot.com/messenger/) - Growl-style alerts and messages for your app.
@@ -62,3 +77,5 @@ Some other possible libraries I might use in the future...
 * [RethinkDB](https://rethinkdb.com/) - The open-source database for the realtime web.
 * [Jasmine](http://jasmine.github.io/) - DOM-less simple JavaScript testing framework. Another possible test library.
 * [Matter.js](http://brm.io/matter-js/) - Matter.js is a 2D physics engine for the web.
+* [Bluebird](http://bluebirdjs.com/) - Bluebird is a fully featured promise library with focus on innovative features and performance.
+* [NProgress](http://ricostacruz.com/nprogress) - A nanoscopic progress bar. With realistic trickle animations to tell your users that something's happening!
