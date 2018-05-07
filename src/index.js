@@ -1,34 +1,36 @@
-import Victor from 'victor';
-import { Set } from 'immutable';
+import * as THREE from 'three';
+import anime from 'animejs';
 
-import Entity from './core/Entity';
-import Scene from './core/Scene';
-import Component from './core/Component';
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 2000);
+camera.position.set(0, 0, 5);
 
-const testScene = new Scene();
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.querySelector('.root').appendChild(renderer.domElement);
 
-const testEntity = new Entity('Test Entity');
+const geometry = new THREE.BoxGeometry(2, 1, 1);
+const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
 
-testScene.entityList = Set([testEntity]);
+const animate = () => {
+  requestAnimationFrame(animate);
 
-const testComponent = new Component(
-  'Test Component',
-  testEntity,
-  new Victor(10, 10),
-  testScene,
-  true,
-  true
-);
-const anotherComponent = new Component(
-  'Another Component',
-  testEntity,
-  new Victor(250, 250),
-  testScene,
-  true,
-  true
-);
+  const percent = { value: 0 };
+  anime({
+    targets: percent,
+    value: 100,
+    easing: 'linear',
+    round: 1,
+    update: function() {
+      cube.position.x = percent.value / 100;
+    },
+  });
 
-testEntity.components = Set([testComponent, anotherComponent]);
+  // cube.position.setX(2);
 
-console.log(testScene);
-console.log(testScene.entityList.first());
+  renderer.render(scene, camera);
+};
+
+animate();
